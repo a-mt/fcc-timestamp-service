@@ -21,6 +21,6 @@ app.all('*', function(req, res){
     }
     res.end(JSON.stringify(data));
 });
-app.listen(8080, function(){
+app.listen(process.env.PORT || 8080, function(){
     console.log('The server is listening on port 8080');
 });
