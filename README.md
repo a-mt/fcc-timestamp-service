@@ -19,3 +19,43 @@ User stories :
         { "unix": null, "natural": null }
 
 https://timestamp-ms.herokuapp.com/
+
+## Run
+
+```
+npm install
+npm start
+```
+
+Go to localhost:8080
+
+## Deploy on Netlify
+
+* Test serverless serving is working
+
+  ``` bash
+  npm install netlify-cli -g
+  # npm add netlify-lambda serverless-http
+
+  netlify dev
+  ```
+
+  Go to http://localhost:8888
+
+* Login to netlify
+
+  ``` bash
+  netlify-cli init
+  ```
+
+* Deploy draft
+
+  ``` bash
+  netlify deploy
+  ```
+
+* Deploy
+
+  ``` bash
+  netlify deploy --prod
+  ```
